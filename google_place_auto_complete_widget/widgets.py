@@ -6,11 +6,11 @@ from django.utils.safestring import mark_safe
 
 
 class GooglePlaceAutocompleteWidget(TextInput):
-    template_name = 'googleplaceautocompletewidget/widget.html'
+    template_name = 'templates/googleplaceautocompletewidget/widget.html'
 
     class Media:
         js = (
-            'googleplaceautocompletewidget/js/widget.js',
+            'static/googleplaceautocompletewidget/js/widget.js',
             'https://maps.googleapis.com/maps/api/js?key=%s&libraries=places&callback=initGooglePlaceAutocompleteWidget' % settings.GOOGLE_PLACE_AUTOCOMPLETE_KEY,
         )
 

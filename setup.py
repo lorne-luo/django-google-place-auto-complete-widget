@@ -11,12 +11,12 @@ def read(fname):
 setup(
     name='django-google-place-auto-complete-widget',
     version='0.1.0',
-    packages=['django-google-place-auto-complete-widget'],
+    packages=find_packages(),
     url='https://git.butterfly.com.au/django-packages/django-google-place-auto-complete-widget.git',
     download_url='https://git.butterfly.com.au/django-packages/django-google-place-auto-complete-widget.git',
     license='Apache 2.0',
     author='Min Dang',
     author_email='min.dang@butterfly.com.au',
     maintainer='Min',
-    maintainer_email='dmin.dang@butterfly.com.au',
+    maintainer_email='min.dang@butterfly.com.au',
 )
