@@ -10,7 +10,7 @@ class GooglePlaceAutocompleteWidget(TextInput):
 
     class Media:
         js = (
-            'static/google_place_auto_complete_widget/js/widget.js',
+            'google_place_auto_complete_widget/js/widget.js',
             'https://maps.googleapis.com/maps/api/js?key=%s&libraries=places&callback=initGooglePlaceAutocompleteWidget' % settings.GOOGLE_PLACE_AUTOCOMPLETE_KEY,
         )
 
