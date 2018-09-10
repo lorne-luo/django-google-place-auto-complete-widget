@@ -6,7 +6,7 @@ from django.utils.safestring import mark_safe
 
 
 class GooglePlaceAutocompleteWidget(TextInput):
-    template_name = 'templates/google_place_auto_complete_widget/widget.html'
+    template = 'google_place_auto_complete_widget/widget.html'
 
     class Media:
         js = (
