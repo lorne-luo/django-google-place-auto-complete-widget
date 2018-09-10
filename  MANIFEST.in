@@ -4,6 +4,8 @@ include README.md
 include MANIFEST.in
 include setup.py
 include test_settings.py
+include google_place_auto_complete_widget/static/*
+include google_place_auto_complete_widget/templates/*
 recursive-include demo *
 recursive-include google_place_auto_complete_widget *
 recursive-exclude * __pycache__
