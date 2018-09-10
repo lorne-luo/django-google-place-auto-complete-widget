@@ -20,5 +20,5 @@ setup(
     maintainer='Min',
     maintainer_email='min.dang@butterfly.com.au',
     include_package_data=True,
-     zip_safe=False,
+    zip_safe=False,
 )
