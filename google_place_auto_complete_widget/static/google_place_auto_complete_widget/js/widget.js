@@ -12,11 +12,9 @@ function initGooglePlaceAutocompleteWidget() {
         var isChrome = !!window.chrome && !!window.chrome.webstore;
         if (isChrome) {
             $(this).attr('autocomplete', "new-password");
-            
         }
         else{
             $(this).attr('autocomplete', "off");
-            
         }
       });
 
