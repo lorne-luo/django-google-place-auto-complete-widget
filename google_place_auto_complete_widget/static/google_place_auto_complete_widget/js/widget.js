@@ -9,7 +9,15 @@ function initGooglePlaceAutocompleteWidget() {
     // In Chrome, autocomplete = off does not work. Need to set it to be new-password
     // However, we cannot simply specify the autocomplete=new-password in HTML since the Google place autocomplete will change that attribute to be off. 
     $("[data-googleplaceautocompletewidget]").on('focus', function (e) {
-       $(this).attr('autocomplete', "new-password");
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if (isChrome) {
+            $(this).attr('autocomplete', "new-password");
+            
+        }
+        else{
+            $(this).attr('autocomplete', "off");
+            
+        }
       });
 
     var inputs = document.querySelectorAll('[data-googleplaceautocompletewidget]');
