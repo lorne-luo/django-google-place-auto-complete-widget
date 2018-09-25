@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name='django-google-place-auto-complete-widget',
-    version='0.1.1',
+    version='0.1.2',
     packages=find_packages(),
     url='https://git.butterfly.com.au/django-packages/django-google-place-auto-complete-widget.git',
     download_url='https://git.butterfly.com.au/django-packages/django-google-place-auto-complete-widget.git',
