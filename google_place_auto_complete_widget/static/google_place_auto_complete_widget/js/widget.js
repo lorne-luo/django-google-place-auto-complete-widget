@@ -33,5 +33,10 @@ function initGooglePlaceAutocompleteWidget() {
   });
 }
 
+// To make NodeList.forEach() method work on internet explorer, needs to add the following polyfill in your application.
+(function () {
+    if ( typeof NodeList.prototype.forEach === "function" ) return false;
+    NodeList.prototype.forEach = Array.prototype.forEach;
+})();
 
 
