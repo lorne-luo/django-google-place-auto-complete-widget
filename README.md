@@ -8,14 +8,14 @@ https://developers.google.com/maps/documentation/javascript/examples/places-auto
 2. Add GOOGLE_PLACE_AUTOCOMPLETE_KEY in your settings.
 
 # EXAMPLE
-
+```python
 from google_place_auto_complete_widget.widgets import GooglePlaceAutocompleteWidget
     
-address = forms.CharField(required=True, 
-                          max_length=50, 
-                          label=_(TRUSTEE_RESIDENTIAL_ADDRESS_LABEL),
-                          widget=GooglePlaceAutocompleteWidget(attrs={'placeholder': ''},
-                                                               options={
-                                                                        'types': ['address'],
-                                                                        'componentRestrictions': {'country': 'au'},
-                                                               }))
+residential_address = forms.CharField(required=True, max_length=50, label=_(RESIDENTIAL_ADDRESS_LABEL),
+                                          widget=GooglePlaceAutocompleteWidget(
+                                              attrs={'placeholder': ''},
+                                              options={
+                                                  'types': ['address'],
+                                                  'componentRestrictions': {'country': 'au'},
+                                              }))
+```
