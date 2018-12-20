@@ -1,7 +1,5 @@
 # SUMMARY
-A widget to enable Google Place Autocomplete for a form field
-More inforation: 
-https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+A widget to enable Google Place Autocomplete for a form field. More inforation:https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
 
 # CONFIGURE
 1. Add "google_place_auto_complete_widget" into your INSTALLED_APPS.
